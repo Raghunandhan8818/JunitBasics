@@ -1,4 +1,4 @@
-package org.example.techtalk.Exceptions;
+package org.example.techtalk.exceptions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,6 @@ class UserTest {
 
     @BeforeEach
     public void setUp() {
-
     }
 
     @Test
@@ -22,16 +21,13 @@ class UserTest {
 
     @Test
     public void shouldThrowIllegalArgumentExceptionWhenLengthOfNameIsLessThanThree() {
-
 //        We can obtain the returned exception to test further, e.g. assert the exception message:
-
         Exception exception = assertThrows(
                 IllegalArgumentException.class, () -> {
                     User user = new User();
                     user.setName("ab");
                 }
         );
-
         assertEquals("Username is too short", exception.getMessage());
     }
 
@@ -47,3 +43,4 @@ class UserTest {
     }
 
 }
+

@@ -1,4 +1,4 @@
-package org.example.techtalk.Exceptions;
+package org.example.techtalk.exceptions;
 
 public class User {
 
