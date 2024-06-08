@@ -14,9 +14,9 @@ public class HamcrestMatcherTests {
 
     /* Number Matchers */
     @Test
-    void shouldPassWhenInputIsGreaterThanOrEqualToFive(){
-        Integer input = 5;
-        assertThat(input, greaterThanOrEqualTo(5));
+    void shouldPassWhenActualIntegerIsGreaterThanOrEqualToFive(){
+        Integer number = 5;
+        assertThat(number, greaterThanOrEqualTo(5));
     }
 
     @Test

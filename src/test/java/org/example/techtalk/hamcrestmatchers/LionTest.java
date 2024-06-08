@@ -12,7 +12,7 @@ class LionTest {
     }
 
     @Test
-    void shouldPassWhenTwoObjectsAreOfSameInstace(){
+    void shouldPassWhenTwoObjectsAreOfSameInstance(){
         Lion mufasa = new Lion();
         assertThat(mufasa, sameInstance(mufasa));
     }
